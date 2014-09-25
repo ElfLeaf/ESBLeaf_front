@@ -6,7 +6,7 @@ public class User {
     /**用户id**/
     protected Integer uid;
     /**用户名**/
-    protected String uname;
+    protected String username;
     /**密码**/
     protected String password;
     /**email**/
@@ -20,10 +20,10 @@ public class User {
         this.uid = uid;
     }
     public String getUname() {
-        return uname;
+        return username;
     }
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setUname(String username) {
+        this.username = username;
     }
     public String getPassword() {
         return password;
