@@ -14,6 +14,7 @@
 		WHERE uid = #{id}
     </select>
     
+    <!-- 登录检测是否存在该用户名信息 -->
     <select id="findLoginUserInfo" parameterType="Map" resultType="user">
         SELECT
             *
