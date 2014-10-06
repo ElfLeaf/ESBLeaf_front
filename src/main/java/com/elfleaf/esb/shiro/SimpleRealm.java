@@ -65,7 +65,7 @@ public class SimpleRealm extends AuthorizingRealm{
         }
 
         //比较用户名密码与数据库中的值是否正确
-        if (!userService.verifyPwd(user.getUid(), password)) {
+        if (!userService.verifyPwd(user.getId(), password)) {
             //密码错误
             throw new IncorrectCredentialsException("密码错误");  
         }

@@ -31,9 +31,9 @@ public class UserDAO extends AMyBatisBaseDAO<User> {
      * 验证密码正确性
      * @return
      */
-    public User verifyPwd(Integer uid,String password) {
+    public User verifyPwd(Integer id,String password) {
         Map<String,Object> params = new HashMap<String, Object>();
-        params.put("uid", uid);
+        params.put("id", id);
         params.put("password", password);
 
         return this.selectOne("verifyPwd", params);

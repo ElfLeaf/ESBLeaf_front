@@ -42,12 +42,12 @@ public class UserService {
     
     /**
      * 根据用户uid，验证uid对应密码是否正确
-     * @param uid
+     * @param id
      * @param password
      * @return
      */
-    public Boolean verifyPwd(Integer uid, String password) {
-        User user = userDAO.verifyPwd(uid, password);
+    public Boolean verifyPwd(Integer id, String password) {
+        User user = userDAO.verifyPwd(id, password);
         return user==null ? false : true;
     }
     

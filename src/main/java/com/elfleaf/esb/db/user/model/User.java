@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class User {
     /**用户id**/
-    protected Integer uid;
+    protected Integer id;
     /**用户名**/
     protected String username;
     /**密码**/
@@ -13,11 +13,11 @@ public class User {
     protected String email;
     /**注册时间**/
     protected Date createdAt;
-    public Integer getUid() {
-        return uid;
+    public Integer getId() {
+        return id;
     }
-    public void setUid(Integer uid) {
-        this.uid = uid;
+    public void setId(Integer id) {
+        this.id = id;
     }
     public String getUname() {
         return username;

@@ -5,7 +5,7 @@
 
     <select id="findById" parameterType="Integer" resultType="user">
         SELECT
-		    uid as uid,
+		    id as id,
 		    username as uname,
 		    password as password,
 		    email as email,
@@ -32,7 +32,7 @@
         SELECT
             *
         FROM Leaf_front.user
-        WHERE uid = #{uid}
+        WHERE id = #{id}
         AND password=PASSWORD(#{password});
     </select>
     
