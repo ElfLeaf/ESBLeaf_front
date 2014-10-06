@@ -5,15 +5,16 @@ package com.elfleaf.esb.db.user.model;
  */
 public class Privilege {
     /**权限id**/
-    protected Integer id;
+    protected Long id;
     /**权限名**/
     protected String privilege_name;
     
     
-    public Integer getId() {
+    
+    public Long getId() {
         return id;
     }
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getPrivilege_name() {
@@ -23,5 +24,7 @@ public class Privilege {
         this.privilege_name = privilege_name;
     }
     
+    
+
     
 }

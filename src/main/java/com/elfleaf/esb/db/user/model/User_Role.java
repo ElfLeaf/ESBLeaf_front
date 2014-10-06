@@ -1,15 +1,14 @@
 package com.elfleaf.esb.db.user.model;
 
 /**
- * 角色与权限对照关系表
+ * 用户与角色关系表
  */
-public class Role_Privilege {
-    /**id**/
+public class User_Role {
     protected Long id;
-    /**角色id**/
+    /**用户id**/
+    protected Long user_id;
+    /**id**/
     protected Long role_id;
-    /**权限id**/
-    protected Long privilege_id;
     
     
     public Long getId() {
@@ -18,20 +17,19 @@ public class Role_Privilege {
     public void setId(Long id) {
         this.id = id;
     }
+    public Long getUser_id() {
+        return user_id;
+    }
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
+    }
     public Long getRole_id() {
         return role_id;
     }
     public void setRole_id(Long role_id) {
         this.role_id = role_id;
     }
-    public Long getPrivilege_id() {
-        return privilege_id;
-    }
-    public void setPrivilege_id(Long privilege_id) {
-        this.privilege_id = privilege_id;
-    }
     
-
     
     
 }

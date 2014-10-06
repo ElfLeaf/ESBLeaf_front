@@ -46,7 +46,7 @@ public class UserService {
      * @param password
      * @return
      */
-    public Boolean verifyPwd(Integer id, String password) {
+    public Boolean verifyPwd(Long id, String password) {
         User user = userDAO.verifyPwd(id, password);
         return user==null ? false : true;
     }

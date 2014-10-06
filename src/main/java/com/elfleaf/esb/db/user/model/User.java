@@ -7,24 +7,21 @@ import java.util.Date;
  */
 public class User {
     /**用户id**/
-    protected Integer id;
+    protected Long id;
     /**用户名**/
     protected String username;
     /**密码**/
     protected String password;
     /**email**/
     protected String email;
-    /**权限角色id**/
-    protected Integer role_id;
     /**注册时间**/
     protected Date createdAt;
     
     
-    
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getUsername() {
@@ -45,18 +42,13 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-    public Integer getRole_id() {
-        return role_id;
-    }
-    public void setRole_id(Integer role_id) {
-        this.role_id = role_id;
-    }
     public Date getCreatedAt() {
         return createdAt;
     }
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
+
 
     
 }
