@@ -2,6 +2,9 @@ package com.elfleaf.esb.db.user.model;
 
 import java.util.Date;
 
+/**
+ * 用户表
+ */
 public class User {
     /**用户id**/
     protected Integer id;
@@ -11,18 +14,23 @@ public class User {
     protected String password;
     /**email**/
     protected String email;
+    /**权限角色id**/
+    protected Integer role_id;
     /**注册时间**/
     protected Date createdAt;
+    
+    
+    
     public Integer getId() {
         return id;
     }
     public void setId(Integer id) {
         this.id = id;
     }
-    public String getUname() {
+    public String getUsername() {
         return username;
     }
-    public void setUname(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
     public String getPassword() {
@@ -37,13 +45,18 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+    public Integer getRole_id() {
+        return role_id;
+    }
+    public void setRole_id(Integer role_id) {
+        this.role_id = role_id;
+    }
     public Date getCreatedAt() {
         return createdAt;
     }
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
-    
-    
+
     
 }

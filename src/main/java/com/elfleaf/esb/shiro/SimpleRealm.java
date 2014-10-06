@@ -70,8 +70,8 @@ public class SimpleRealm extends AuthorizingRealm{
             throw new IncorrectCredentialsException("密码错误");  
         }
         
-        logger.info("用户:" + user.getUname() + "登录验证通过");
-        return new SimpleAuthenticationInfo(user.getUname(), password, getName());
+        logger.info("用户:" + user.getUsername() + "登录验证通过");
+        return new SimpleAuthenticationInfo(user.getUsername(), password, getName());
     }
 
 }
